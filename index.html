@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 55- JS Data Type - Array</title>
+    <style>
+      /* this is for the CSS */
+      /* selector{
+        property:Value;
+      } */
+      h1[data-myheading="myheading"] {
+        background-color: red;
+        padding: 20px;
+        border-radius: 10px;
+      }
+    </style>
+    <script src="script.js"></script>
+    <script>
+      // this is for the JS code
+    </script>
+  </head>
+  <body>
+    <!-- this is for the HTML code-->
+    <!-- Array is spacial variable which can store more than one data at a time  -->
+    <h1 data-myheading="myheading"></h1>
+    <p id="news1p"></p>
+
+    <h1 class="santosh"></h1>
+
+    <p class="chaugule"></p>
+
+    <hr />
+
+    <script>
+      // this is for the JS code
+      //JS ARRAY
+      var students = [
+        "santosh",
+        "onkar",
+        "yogesh",
+        "shekhar",
+        "shubham",
+        "virag",
+      ];
+      //   var student=[{},{},{},{}]
+      console.log("Hello" + " " + students[1]);
+      //arrayName[indexNumber]
+      //array index number always start with the 0 zero.
+      window.alert("Hello" + " " + students[0]);
+
+      let h1 = document.querySelector("[data-myheading]");
+      h1.innerHTML = "Hello " + students[3];
+
+      const allnews = [
+        {
+          n1h1: "FIR against Keralas Twenty20 chief Sabu Jacob on CPM MLAs complaint",
+        },
+        {
+          n1p1: "Sabu M Jacob, who heads the Kitex group of industries, denied the allegations, saying since his party was not affiliated with any political party, they had decided not to share the dais with leaders of any political outfit",
+        },
+        {
+          n2h2: "Before Deepika Padukone, Katrina Kaif 'auditioned' for female cop's role in Rohit Shetty film. Watch",
+        },
+        {
+          n2p2: "Last year, Katrina Kaif had urged Rohit Shetty to make a film with a female cop and even auditioned for the role in jest. Rohit recently announced that Deepika Padukone will play a cop in his next.",
+        },
+      ]; //Array contantaining object i.e Array of Object
+      document.querySelector("h1.santosh").innerHTML = allnews[2].n2h2;
+      document.getElementsByClassName("p.chaugule").innerHTML =
+        allnews[3]["n2p2"];
+    </script>
+  </body>
+</html>
